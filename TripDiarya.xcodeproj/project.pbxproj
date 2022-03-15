@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		7242805627D6065700BB0256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242805527D6065700BB0256 /* AppDelegate.swift */; };
-		7242805827D6065700BB0256 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242805727D6065700BB0256 /* SceneDelegate.swift */; };
-		7242805A27D6065700BB0256 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242805927D6065700BB0256 /* ViewController.swift */; };
+		7242805A27D6065700BB0256 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242805927D6065700BB0256 /* SplashViewController.swift */; };
 		7242805F27D6065800BB0256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7242805E27D6065800BB0256 /* Assets.xcassets */; };
 		7242806227D6065800BB0256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7242806027D6065800BB0256 /* LaunchScreen.storyboard */; };
 		7242806D27D6065900BB0256 /* TripDiaryaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242806C27D6065900BB0256 /* TripDiaryaTests.swift */; };
 		7242807727D6065900BB0256 /* TripDiaryaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242807627D6065900BB0256 /* TripDiaryaUITests.swift */; };
 		7242807927D6065900BB0256 /* TripDiaryaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242807827D6065900BB0256 /* TripDiaryaUITestsLaunchTests.swift */; };
+		72B29CC327E0E80C006BBE66 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B29CC227E0E80C006BBE66 /* SplashViewModel.swift */; };
+		72B29CC527E0E81A006BBE66 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B29CC427E0E81A006BBE66 /* SplashView.swift */; };
+		72B29CC727E0E849006BBE66 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B29CC627E0E849006BBE66 /* Base.swift */; };
+		7DE1CA8103FCD13FE67EE5E9 /* Pods_TripDiaryaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA50A260B61B20DEFCD6497D /* Pods_TripDiaryaTests.framework */; };
+		A8D5D677A1EB1DED223FD68F /* Pods_TripDiarya_TripDiaryaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DFFE8EFB207F6BB7DBF04C /* Pods_TripDiarya_TripDiaryaUITests.framework */; };
+		E2B2F2630095A283FC985433 /* Pods_TripDiarya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8FE86E45B01887682998611 /* Pods_TripDiarya.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E73887DDE3806B13A30C932 /* Pods-TripDiarya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiarya.release.xcconfig"; path = "Target Support Files/Pods-TripDiarya/Pods-TripDiarya.release.xcconfig"; sourceTree = "<group>"; };
+		42B2E1E4BDD1C43F8CE5BB5D /* Pods-TripDiarya-TripDiaryaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiarya-TripDiaryaUITests.release.xcconfig"; path = "Target Support Files/Pods-TripDiarya-TripDiaryaUITests/Pods-TripDiarya-TripDiaryaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		49BCC5408570F773450411A7 /* Pods-TripDiaryaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiaryaTests.release.xcconfig"; path = "Target Support Files/Pods-TripDiaryaTests/Pods-TripDiaryaTests.release.xcconfig"; sourceTree = "<group>"; };
 		7242805227D6065700BB0256 /* TripDiarya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripDiarya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7242805527D6065700BB0256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7242805727D6065700BB0256 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7242805927D6065700BB0256 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7242805927D6065700BB0256 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		7242805E27D6065800BB0256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7242806127D6065800BB0256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7242806327D6065800BB0256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +54,15 @@
 		7242807227D6065900BB0256 /* TripDiaryaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripDiaryaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7242807627D6065900BB0256 /* TripDiaryaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDiaryaUITests.swift; sourceTree = "<group>"; };
 		7242807827D6065900BB0256 /* TripDiaryaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDiaryaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72B29CC227E0E80C006BBE66 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		72B29CC427E0E81A006BBE66 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		72B29CC627E0E849006BBE66 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		804D3CFEC02CD9D8F91DB086 /* Pods-TripDiarya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiarya.debug.xcconfig"; path = "Target Support Files/Pods-TripDiarya/Pods-TripDiarya.debug.xcconfig"; sourceTree = "<group>"; };
+		A040A165573BCA36AA5D8E77 /* Pods-TripDiarya-TripDiaryaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiarya-TripDiaryaUITests.debug.xcconfig"; path = "Target Support Files/Pods-TripDiarya-TripDiaryaUITests/Pods-TripDiarya-TripDiaryaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA50A260B61B20DEFCD6497D /* Pods_TripDiaryaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripDiaryaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0590B84A402B1AAB8E5380 /* Pods-TripDiaryaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiaryaTests.debug.xcconfig"; path = "Target Support Files/Pods-TripDiaryaTests/Pods-TripDiaryaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B8FE86E45B01887682998611 /* Pods_TripDiarya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripDiarya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1DFFE8EFB207F6BB7DBF04C /* Pods_TripDiarya_TripDiaryaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripDiarya_TripDiaryaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B2F2630095A283FC985433 /* Pods_TripDiarya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DE1CA8103FCD13FE67EE5E9 /* Pods_TripDiaryaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8D5D677A1EB1DED223FD68F /* Pods_TripDiarya_TripDiaryaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E58953052A26ACD1790BFC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8FE86E45B01887682998611 /* Pods_TripDiarya.framework */,
+				D1DFFE8EFB207F6BB7DBF04C /* Pods_TripDiarya_TripDiaryaUITests.framework */,
+				AA50A260B61B20DEFCD6497D /* Pods_TripDiaryaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7242804927D6065700BB0256 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +110,8 @@
 				7242806B27D6065900BB0256 /* TripDiaryaTests */,
 				7242807527D6065900BB0256 /* TripDiaryaUITests */,
 				7242805327D6065700BB0256 /* Products */,
+				8E8941DBC24736E5382B0CBC /* Pods */,
+				5E58953052A26ACD1790BFC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +128,13 @@
 		7242805427D6065700BB0256 /* TripDiarya */ = {
 			isa = PBXGroup;
 			children = (
+				72B29CC127E0E6AF006BBE66 /* viewmodel */,
+				72B29CC027E0E6AB006BBE66 /* view */,
 				7242805527D6065700BB0256 /* AppDelegate.swift */,
-				7242805727D6065700BB0256 /* SceneDelegate.swift */,
-				7242805927D6065700BB0256 /* ViewController.swift */,
 				7242805E27D6065800BB0256 /* Assets.xcassets */,
 				7242806027D6065800BB0256 /* LaunchScreen.storyboard */,
 				7242806327D6065800BB0256 /* Info.plist */,
+				72B29CC627E0E849006BBE66 /* Base.swift */,
 			);
 			path = TripDiarya;
 			sourceTree = "<group>";
@@ -124,6 +156,37 @@
 			path = TripDiaryaUITests;
 			sourceTree = "<group>";
 		};
+		72B29CC027E0E6AB006BBE66 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7242805927D6065700BB0256 /* SplashViewController.swift */,
+				72B29CC427E0E81A006BBE66 /* SplashView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		72B29CC127E0E6AF006BBE66 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				72B29CC227E0E80C006BBE66 /* SplashViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		8E8941DBC24736E5382B0CBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				804D3CFEC02CD9D8F91DB086 /* Pods-TripDiarya.debug.xcconfig */,
+				2E73887DDE3806B13A30C932 /* Pods-TripDiarya.release.xcconfig */,
+				A040A165573BCA36AA5D8E77 /* Pods-TripDiarya-TripDiaryaUITests.debug.xcconfig */,
+				42B2E1E4BDD1C43F8CE5BB5D /* Pods-TripDiarya-TripDiaryaUITests.release.xcconfig */,
+				AF0590B84A402B1AAB8E5380 /* Pods-TripDiaryaTests.debug.xcconfig */,
+				49BCC5408570F773450411A7 /* Pods-TripDiaryaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7242807C27D6065900BB0256 /* Build configuration list for PBXNativeTarget "TripDiarya" */;
 			buildPhases = (
+				04DE38FED23649502EE84BBC /* [CP] Check Pods Manifest.lock */,
 				7242804E27D6065700BB0256 /* Sources */,
 				7242804F27D6065700BB0256 /* Frameworks */,
 				7242805027D6065700BB0256 /* Resources */,
+				B028F3875E181BD94591DBAF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7242807F27D6065900BB0256 /* Build configuration list for PBXNativeTarget "TripDiaryaTests" */;
 			buildPhases = (
+				7CD0D291140E60A0BFF713A8 /* [CP] Check Pods Manifest.lock */,
 				7242806427D6065900BB0256 /* Sources */,
 				7242806527D6065900BB0256 /* Frameworks */,
 				7242806627D6065900BB0256 /* Resources */,
@@ -166,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7242808227D6065900BB0256 /* Build configuration list for PBXNativeTarget "TripDiaryaUITests" */;
 			buildPhases = (
+				5FACE1E5908ED09021099EC1 /* [CP] Check Pods Manifest.lock */,
 				7242806E27D6065900BB0256 /* Sources */,
 				7242806F27D6065900BB0256 /* Frameworks */,
 				7242807027D6065900BB0256 /* Resources */,
+				2AF9C32BE2102104D6B20B7C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,14 +317,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04DE38FED23649502EE84BBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TripDiarya-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AF9C32BE2102104D6B20B7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TripDiarya-TripDiaryaUITests/Pods-TripDiarya-TripDiaryaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TripDiarya-TripDiaryaUITests/Pods-TripDiarya-TripDiaryaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TripDiarya-TripDiaryaUITests/Pods-TripDiarya-TripDiaryaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FACE1E5908ED09021099EC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TripDiarya-TripDiaryaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CD0D291140E60A0BFF713A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TripDiaryaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B028F3875E181BD94591DBAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TripDiarya/Pods-TripDiarya-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TripDiarya/Pods-TripDiarya-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TripDiarya/Pods-TripDiarya-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7242804E27D6065700BB0256 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7242805A27D6065700BB0256 /* ViewController.swift in Sources */,
+				72B29CC327E0E80C006BBE66 /* SplashViewModel.swift in Sources */,
+				72B29CC527E0E81A006BBE66 /* SplashView.swift in Sources */,
+				72B29CC727E0E849006BBE66 /* Base.swift in Sources */,
+				7242805A27D6065700BB0256 /* SplashViewController.swift in Sources */,
 				7242805627D6065700BB0256 /* AppDelegate.swift in Sources */,
-				7242805827D6065700BB0256 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +595,7 @@
 		};
 		7242807D27D6065900BB0256 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 804D3CFEC02CD9D8F91DB086 /* Pods-TripDiarya.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -450,6 +624,7 @@
 		};
 		7242807E27D6065900BB0256 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E73887DDE3806B13A30C932 /* Pods-TripDiarya.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -478,6 +653,7 @@
 		};
 		7242808027D6065900BB0256 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0590B84A402B1AAB8E5380 /* Pods-TripDiaryaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +674,7 @@
 		};
 		7242808127D6065900BB0256 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49BCC5408570F773450411A7 /* Pods-TripDiaryaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +695,7 @@
 		};
 		7242808327D6065900BB0256 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A040A165573BCA36AA5D8E77 /* Pods-TripDiarya-TripDiaryaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +714,7 @@
 		};
 		7242808427D6065900BB0256 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42B2E1E4BDD1C43F8CE5BB5D /* Pods-TripDiarya-TripDiaryaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
