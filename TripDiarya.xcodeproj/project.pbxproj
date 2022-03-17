@@ -17,6 +17,8 @@
 		72B29CC327E0E80C006BBE66 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B29CC227E0E80C006BBE66 /* SplashViewModel.swift */; };
 		72B29CC527E0E81A006BBE66 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B29CC427E0E81A006BBE66 /* SplashView.swift */; };
 		72B29CC727E0E849006BBE66 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B29CC627E0E849006BBE66 /* Base.swift */; };
+		72F021B727E30CFC00CBD208 /* ViewActionReactiveUseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F021B627E30CFC00CBD208 /* ViewActionReactiveUseable.swift */; };
+		72F021B927E315BC00CBD208 /* SplashTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F021B827E315BC00CBD208 /* SplashTimer.swift */; };
 		7DE1CA8103FCD13FE67EE5E9 /* Pods_TripDiaryaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA50A260B61B20DEFCD6497D /* Pods_TripDiaryaTests.framework */; };
 		A8D5D677A1EB1DED223FD68F /* Pods_TripDiarya_TripDiaryaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DFFE8EFB207F6BB7DBF04C /* Pods_TripDiarya_TripDiaryaUITests.framework */; };
 		E2B2F2630095A283FC985433 /* Pods_TripDiarya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8FE86E45B01887682998611 /* Pods_TripDiarya.framework */; };
@@ -57,6 +59,8 @@
 		72B29CC227E0E80C006BBE66 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		72B29CC427E0E81A006BBE66 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		72B29CC627E0E849006BBE66 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		72F021B627E30CFC00CBD208 /* ViewActionReactiveUseable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewActionReactiveUseable.swift; sourceTree = "<group>"; };
+		72F021B827E315BC00CBD208 /* SplashTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashTimer.swift; sourceTree = "<group>"; };
 		804D3CFEC02CD9D8F91DB086 /* Pods-TripDiarya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiarya.debug.xcconfig"; path = "Target Support Files/Pods-TripDiarya/Pods-TripDiarya.debug.xcconfig"; sourceTree = "<group>"; };
 		A040A165573BCA36AA5D8E77 /* Pods-TripDiarya-TripDiaryaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDiarya-TripDiaryaUITests.debug.xcconfig"; path = "Target Support Files/Pods-TripDiarya-TripDiaryaUITests/Pods-TripDiarya-TripDiaryaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA50A260B61B20DEFCD6497D /* Pods_TripDiaryaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripDiaryaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +132,7 @@
 		7242805427D6065700BB0256 /* TripDiarya */ = {
 			isa = PBXGroup;
 			children = (
+				72F021BA27E315C900CBD208 /* splash */,
 				72B29CC127E0E6AF006BBE66 /* viewmodel */,
 				72B29CC027E0E6AB006BBE66 /* view */,
 				7242805527D6065700BB0256 /* AppDelegate.swift */,
@@ -159,8 +164,6 @@
 		72B29CC027E0E6AB006BBE66 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				7242805927D6065700BB0256 /* SplashViewController.swift */,
-				72B29CC427E0E81A006BBE66 /* SplashView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -168,9 +171,20 @@
 		72B29CC127E0E6AF006BBE66 /* viewmodel */ = {
 			isa = PBXGroup;
 			children = (
-				72B29CC227E0E80C006BBE66 /* SplashViewModel.swift */,
 			);
 			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		72F021BA27E315C900CBD208 /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				72F021B827E315BC00CBD208 /* SplashTimer.swift */,
+				7242805927D6065700BB0256 /* SplashViewController.swift */,
+				72B29CC427E0E81A006BBE66 /* SplashView.swift */,
+				72F021B627E30CFC00CBD208 /* ViewActionReactiveUseable.swift */,
+				72B29CC227E0E80C006BBE66 /* SplashViewModel.swift */,
+			);
+			path = splash;
 			sourceTree = "<group>";
 		};
 		8E8941DBC24736E5382B0CBC /* Pods */ = {
@@ -183,7 +197,6 @@
 				AF0590B84A402B1AAB8E5380 /* Pods-TripDiaryaTests.debug.xcconfig */,
 				49BCC5408570F773450411A7 /* Pods-TripDiaryaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -427,9 +440,11 @@
 			files = (
 				72B29CC327E0E80C006BBE66 /* SplashViewModel.swift in Sources */,
 				72B29CC527E0E81A006BBE66 /* SplashView.swift in Sources */,
+				72F021B927E315BC00CBD208 /* SplashTimer.swift in Sources */,
 				72B29CC727E0E849006BBE66 /* Base.swift in Sources */,
 				7242805A27D6065700BB0256 /* SplashViewController.swift in Sources */,
 				7242805627D6065700BB0256 /* AppDelegate.swift in Sources */,
+				72F021B727E30CFC00CBD208 /* ViewActionReactiveUseable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +621,6 @@
 				INFOPLIST_FILE = TripDiarya/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -635,7 +649,6 @@
 				INFOPLIST_FILE = TripDiarya/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

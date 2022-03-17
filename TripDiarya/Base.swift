@@ -7,12 +7,12 @@
 
 import Foundation
 import UIKit
+import RxSwift
+
 protocol ViewModelType{
     associatedtype Input
     associatedtype Output
-    
-    var input: Input? { get }
-    var output: Output? { get }
+    func transform(input: Input) -> Output
 }
 
 class BaseView: UIView{
@@ -31,20 +31,16 @@ class BaseView: UIView{
     }
 }
 
-class BaseViewController: UIViewController{
-    override func loadView() {
-        super.loadView()
-        bindViewModel()
-    }
-    
-    public func bindViewModel(){
-        
-    }
-}
+
 extension UIView{
     func addSubViews(_ views: UIView...){
         for view in views {
             addSubview(view)
         }
     }
+}
+
+enum ViewState{
+    case viewDidLoad
+    case viewWillAppear
 }
