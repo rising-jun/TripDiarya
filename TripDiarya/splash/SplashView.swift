@@ -21,13 +21,12 @@ class SplashView: BaseView{
         introLabel.font = UIFont.boldSystemFont(ofSize: 24)
     }
     
-    private lazy var animationView = AnimationView(name: "")
+    private lazy var animationView = AnimationView(name: "splashicon")
     
     override func setupUI() {
         super.setupUI()
         backgroundColor = .systemBlue
         addSubViews(animationView, introLabel)
-        setLottieContentMode()
         animationView.snp.makeConstraints { make in
             make.center.equalTo(self)
             make.width.equalTo(200)
@@ -42,10 +41,14 @@ class SplashView: BaseView{
         }
     }
     
-    private func setLottieContentMode(){
+    func startLottie(){
         animationView.contentMode = .scaleAspectFit
+        animationView.play()
     }
     
+    func stopLottie(){
+        animationView.stop()
+    }
 }
 
 

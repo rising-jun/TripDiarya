@@ -16,3 +16,4 @@ protocol ViewCycleSubscribeable{
     var viewLifeState: PublishSubject<ViewState> { get set }
     func subscribeViewCycle()
 }
+

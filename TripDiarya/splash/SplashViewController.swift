@@ -16,7 +16,6 @@ class SplashViewController: UIViewController, ViewActionReactiveUseable {
     lazy var timeOverCheckSubject = PublishSubject<Bool>()
     private lazy var v = SplashView(frame: view.frame)
     
-    
     override func loadView() {
         super.loadView()
         subscribeViewCycle()
@@ -41,16 +40,24 @@ class SplashViewController: UIViewController, ViewActionReactiveUseable {
     private lazy var output = viewModel.transform(input: input)
     
     func bindViewModel() {
+        output.state?.map{$0.viewLogic}
+        .filter{$0 == .setupView}
+        .drive(onNext: { [weak self] _ in
+            guard let self = self else { return }
+            self.v.startLottie()
+        }).disposed(by: disposeBag)
+        
         output.state?
             .map{$0.timeOver}
+            .filter{$0 == .ready}
             .drive(onNext: { [weak self] done in
-                print("done \(done)")
+                guard let self = self else { return }
+                self.v.stopLottie()
             }).disposed(by: disposeBag)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         view = v
     }
 }

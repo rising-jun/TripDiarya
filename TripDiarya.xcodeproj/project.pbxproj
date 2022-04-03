@@ -14,6 +14,7 @@
 		7242806D27D6065900BB0256 /* TripDiaryaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242806C27D6065900BB0256 /* TripDiaryaTests.swift */; };
 		7242807727D6065900BB0256 /* TripDiaryaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242807627D6065900BB0256 /* TripDiaryaUITests.swift */; };
 		7242807927D6065900BB0256 /* TripDiaryaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242807827D6065900BB0256 /* TripDiaryaUITestsLaunchTests.swift */; };
+		729C8FDB27F98F5F009F72A9 /* splashicon.json in Resources */ = {isa = PBXBuildFile; fileRef = 729C8FDA27F98F5F009F72A9 /* splashicon.json */; };
 		72B29CC327E0E80C006BBE66 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B29CC227E0E80C006BBE66 /* SplashViewModel.swift */; };
 		72B29CC527E0E81A006BBE66 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B29CC427E0E81A006BBE66 /* SplashView.swift */; };
 		72B29CC727E0E849006BBE66 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B29CC627E0E849006BBE66 /* Base.swift */; };
@@ -56,6 +57,7 @@
 		7242807227D6065900BB0256 /* TripDiaryaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripDiaryaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7242807627D6065900BB0256 /* TripDiaryaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDiaryaUITests.swift; sourceTree = "<group>"; };
 		7242807827D6065900BB0256 /* TripDiaryaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDiaryaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		729C8FDA27F98F5F009F72A9 /* splashicon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = splashicon.json; path = ../../TripDiary/TripDiary/splashicon.json; sourceTree = "<group>"; };
 		72B29CC227E0E80C006BBE66 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		72B29CC427E0E81A006BBE66 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		72B29CC627E0E849006BBE66 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		7242805427D6065700BB0256 /* TripDiarya */ = {
 			isa = PBXGroup;
 			children = (
+				729C8FDA27F98F5F009F72A9 /* splashicon.json */,
 				72F021BA27E315C900CBD208 /* splash */,
 				72B29CC127E0E6AF006BBE66 /* viewmodel */,
 				72B29CC027E0E6AB006BBE66 /* view */,
@@ -311,6 +314,7 @@
 			files = (
 				7242806227D6065800BB0256 /* LaunchScreen.storyboard in Resources */,
 				7242805F27D6065800BB0256 /* Assets.xcassets in Resources */,
+				729C8FDB27F98F5F009F72A9 /* splashicon.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

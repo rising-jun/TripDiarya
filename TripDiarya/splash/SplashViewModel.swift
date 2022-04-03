@@ -12,11 +12,23 @@ import RxCocoa
 final class SplashViewModel: ViewModelType{
     private let disposeBag = DisposeBag()
     private let state = BehaviorRelay<SplashViewState>(value: SplashViewState())
+    private var timeover = PublishSubject<ReadyState>()
     private var timer: TimerStartable?
     
     init(timer: TimerStartable){
         self.timer = timer
         timer.setDelegate(timerDelegate: self)
+    }
+    
+    struct Input{
+        let viewState: Observable<ViewState>?
+    }
+    struct Output{
+        var state: Driver<SplashViewState>?
+    }
+    struct SplashViewState{
+        var timeOver: ReadyState?
+        var viewLogic: ViewLogic?
     }
     
     func transform(input: Input) -> Output {
@@ -34,31 +46,21 @@ final class SplashViewModel: ViewModelType{
                 self.timer?.timerStart()
             }).disposed(by: disposeBag)
         
+        timeover.filter{$0 == .ready}
+        .take(1)
+        .withLatestFrom(state){ viewState, state -> SplashViewState in
+            var newState = state
+            newState.timeOver = .ready
+            return newState
+        }.bind(to: self.state)
+            .disposed(by: disposeBag)
+        
         return Output(state: state.asDriver())
-    }
-    
-    struct Input{
-        let viewState: Observable<ViewState>?
-    }
-    struct Output{
-        var state: Driver<SplashViewState>?
-    }
-    
-    struct SplashViewState{
-        var timeOver: Bool?
-        var viewLogic: ViewLogic?
     }
 }
 extension SplashViewModel: TimerDelegate{
     func timerDidOver() {
-        print("time")
-//        print("timer did excute")
-//        state.map{ state in
-//                var newState = state
-//                newState.timeOver = true
-//                return newState}
-//            .bind(to: self.state)
-//            .disposed(by: disposeBag)
+        timeover.onNext(.ready)
     }
 }
 
