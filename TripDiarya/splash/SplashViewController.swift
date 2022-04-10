@@ -52,7 +52,7 @@ class SplashViewController: UIViewController, ViewActionReactiveUseable {
             .filter{$0 == .ready}
             .drive(onNext: { [weak self] done in
                 guard let self = self else { return }
-                self.v.stopLottie()
+                self.present(OnboardingViewContorller(), animated: true, completion: nil)
             }).disposed(by: disposeBag)
     }
     

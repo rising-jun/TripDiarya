@@ -14,6 +14,9 @@
 		7242806D27D6065900BB0256 /* TripDiaryaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242806C27D6065900BB0256 /* TripDiaryaTests.swift */; };
 		7242807727D6065900BB0256 /* TripDiaryaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242807627D6065900BB0256 /* TripDiaryaUITests.swift */; };
 		7242807927D6065900BB0256 /* TripDiaryaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7242807827D6065900BB0256 /* TripDiaryaUITestsLaunchTests.swift */; };
+		726A34972802D9EA003599ED /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A34962802D9EA003599ED /* OnboardingViewController.swift */; };
+		726A34992802DA03003599ED /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A34982802DA03003599ED /* OnboardingView.swift */; };
+		726A349B2802DAE7003599ED /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A349A2802DAE7003599ED /* OnboardingViewModel.swift */; };
 		729C8FDB27F98F5F009F72A9 /* splashicon.json in Resources */ = {isa = PBXBuildFile; fileRef = 729C8FDA27F98F5F009F72A9 /* splashicon.json */; };
 		72B29CC327E0E80C006BBE66 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B29CC227E0E80C006BBE66 /* SplashViewModel.swift */; };
 		72B29CC527E0E81A006BBE66 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B29CC427E0E81A006BBE66 /* SplashView.swift */; };
@@ -57,6 +60,9 @@
 		7242807227D6065900BB0256 /* TripDiaryaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripDiaryaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7242807627D6065900BB0256 /* TripDiaryaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDiaryaUITests.swift; sourceTree = "<group>"; };
 		7242807827D6065900BB0256 /* TripDiaryaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDiaryaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		726A34962802D9EA003599ED /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		726A34982802DA03003599ED /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		726A349A2802DAE7003599ED /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		729C8FDA27F98F5F009F72A9 /* splashicon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = splashicon.json; path = ../../TripDiary/TripDiary/splashicon.json; sourceTree = "<group>"; };
 		72B29CC227E0E80C006BBE66 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		72B29CC427E0E81A006BBE66 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -134,15 +140,12 @@
 		7242805427D6065700BB0256 /* TripDiarya */ = {
 			isa = PBXGroup;
 			children = (
-				729C8FDA27F98F5F009F72A9 /* splashicon.json */,
+				726A34952802D994003599ED /* app_delegate */,
+				726A34942802D989003599ED /* onboarding */,
 				72F021BA27E315C900CBD208 /* splash */,
-				72B29CC127E0E6AF006BBE66 /* viewmodel */,
-				72B29CC027E0E6AB006BBE66 /* view */,
-				7242805527D6065700BB0256 /* AppDelegate.swift */,
+				729C8FDA27F98F5F009F72A9 /* splashicon.json */,
 				7242805E27D6065800BB0256 /* Assets.xcassets */,
-				7242806027D6065800BB0256 /* LaunchScreen.storyboard */,
 				7242806327D6065800BB0256 /* Info.plist */,
-				72B29CC627E0E849006BBE66 /* Base.swift */,
 			);
 			path = TripDiarya;
 			sourceTree = "<group>";
@@ -164,18 +167,24 @@
 			path = TripDiaryaUITests;
 			sourceTree = "<group>";
 		};
-		72B29CC027E0E6AB006BBE66 /* view */ = {
+		726A34942802D989003599ED /* onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				726A34962802D9EA003599ED /* OnboardingViewController.swift */,
+				726A34982802DA03003599ED /* OnboardingView.swift */,
+				726A349A2802DAE7003599ED /* OnboardingViewModel.swift */,
 			);
-			path = view;
+			path = onboarding;
 			sourceTree = "<group>";
 		};
-		72B29CC127E0E6AF006BBE66 /* viewmodel */ = {
+		726A34952802D994003599ED /* app_delegate */ = {
 			isa = PBXGroup;
 			children = (
+				72B29CC627E0E849006BBE66 /* Base.swift */,
+				7242806027D6065800BB0256 /* LaunchScreen.storyboard */,
+				7242805527D6065700BB0256 /* AppDelegate.swift */,
 			);
-			path = viewmodel;
+			path = app_delegate;
 			sourceTree = "<group>";
 		};
 		72F021BA27E315C900CBD208 /* splash */ = {
@@ -445,6 +454,9 @@
 				72B29CC327E0E80C006BBE66 /* SplashViewModel.swift in Sources */,
 				72B29CC527E0E81A006BBE66 /* SplashView.swift in Sources */,
 				72F021B927E315BC00CBD208 /* SplashTimer.swift in Sources */,
+				726A34992802DA03003599ED /* OnboardingView.swift in Sources */,
+				726A34972802D9EA003599ED /* OnboardingViewController.swift in Sources */,
+				726A349B2802DAE7003599ED /* OnboardingViewModel.swift in Sources */,
 				72B29CC727E0E849006BBE66 /* Base.swift in Sources */,
 				7242805A27D6065700BB0256 /* SplashViewController.swift in Sources */,
 				7242805627D6065700BB0256 /* AppDelegate.swift in Sources */,
